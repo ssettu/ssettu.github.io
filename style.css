@@ -1,0 +1,427 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Gotham Pro", sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    justify-content: center; 
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#form-search  {
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#query {
+    all: unset;
+    font: 16px system-ui;
+    color: #000000;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+.button-search {
+    background-color: #fff;
+    border: none;
+}
+
+
+.form-search {
+    background-color: #4654e1;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+nav {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+ul.menu {
+    background-color: #fff;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    max-width: 1150px; 
+    width: 100%;
+    position: relative;
+}
+
+ul.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+ul.menu li a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+ul.menu li a:hover {
+    color: lightgray;
+}
+
+ul.menu a img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+ul.menu .logo {
+    position: absolute;
+    left: 20px; 
+}
+
+
+.mainphoto {
+    background-image:url('img/fonstroit.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    
+}
+
+h1 {
+    font-size: 5.0rem;
+    margin-bottom: 20px;
+    
+}
+
+.mainbutton {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.mainbutton :hover {
+    background-color: lightgray;
+}
+
+.overlay {
+    
+    padding: 100px 60px;
+    text-align: left;
+    color: white;
+    max-width: 600px;
+}
+
+.advantages_pole {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.advantage_element h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: start;
+}
+
+.content-container {
+    padding: 0px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.icon-advantage {
+    height: 2rem;
+    margin-bottom: 0.1rem;
+}
+
+.advantage_subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.advantage_content {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.advantage_content p {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+
+.read-work {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-works {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.work-photo {
+    
+    flex: 1;
+    max-width: 60%; 
+}
+
+.work-photo img {
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+.description-work {
+    padding-left: 20px; 
+    
+}
+
+.work-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 0.4rem;
+    border: none;
+    width: 10rem;
+    
+}
+
+
+.description {
+    max-width: 30rem;
+    font-size: 1rem;
+   
+}
+
+.title-description {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.name {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1rem;
+    padding-left: 10px;
+    
+}
+
+
+.contact {
+    margin: 3rem 5rem;
+    justify-content: center ;
+
+}
+
+.contact label{
+    font-size: 1.0rem;
+}
+
+.labelname {
+    display: block;
+}
+
+.phoneguest {
+    margin: 10px 0;
+}
+.nameguest{
+    display: block;
+}
+
+
+.textform {
+    padding: 10px 0 0 5rem;
+    
+    line-height: 0.5rem;
+  
+}
+.form {
+    margin: 5rem 0;
+    
+}
+
+
+.contactguest {
+    background-color: #FFC107;
+    border-radius: 2rem;
+    height: 50vh;
+    max-width: 1200px; 
+    align-items: center;
+    width: 100%;
+    display: block;
+    justify-content: left;
+    align-items: center;    
+    
+}
+
+.button-form-send{
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    border: none;
+    margin: 0 0 0 1rem;
+    cursor: pointer;
+}
+
+.button-form-send:hover {
+    border: 1px solid #000000;
+    
+}
+
+.text-form {
+    font-size: 3rem;
+}
+.text-form-mini {
+    font-size: 1.3rem;
+}
+
+.footerinf {
+    height: 25vh;
+    width: 100%;
+    
+   
+}
+
+.footerme {
+    
+    width: 100%;
+    max-width: 1190px; 
+    margin: 0 auto;
+    padding: 0 10px;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+
+.footermenu li {
+    list-style: none;
+    padding: 10px;
+}
+
+
+.footermenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+
+.footer-menu-li a:hover {
+    color: lightgray;
+};
+
+.footerinformaiton {
+    font-size: 10rem;
+}
+
+.mediafooter a{
+    cursor: pointer;
+}
+
+
+
+
+
+.gallerywork h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Сетка: 1-4 колонки */
+    grid-gap: 15px;
+    max-width: 1200px; 
+    margin: 50px auto; 
+    padding: 0 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+.gallery img:hover {
+    transform: scale(1.05); 
+}
