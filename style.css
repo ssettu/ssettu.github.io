@@ -425,3 +425,26 @@ h1 {
 .gallery img:hover {
     transform: scale(1.05); 
 }
+
+@media (max-width: 480px) {
+    ul.menu {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    ul.menu li {
+        margin: 10px 0;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .work-button {
+        width: 100%;
+    }
+
+    .textform {
+        padding: 5px 0 0 2rem;
+    }
+}
