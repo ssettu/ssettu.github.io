@@ -34,7 +34,6 @@ button {
     height: 30px;
     border-radius: 5px;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -50,16 +49,6 @@ button {
 .button-search {
     background-color: #fff;
     border: none;
-}
-
-.form-search {
-    background-color: #4654e1;
-    width: 300px;
-    height: 44px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 nav {
@@ -112,16 +101,19 @@ ul.menu .logo {
 }
 
 .mainphoto {
-    background-image: url('img/fonstroit.jpg');
+    background-image: url('img/fonstroit.jpg'); 
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
     display: flex;
     justify-content: right;
+   
 }
 
+
 h1 {
-    font-size: 5.0rem;
+    font-size: 4rem;
     margin-bottom: 20px;
 }
 
@@ -172,6 +164,7 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: start;
+    gap: 20px;
 }
 
 .content-container {
@@ -201,6 +194,7 @@ h1 {
     max-width: 250px;
     margin: 0 auto;
 }
+
 
 .read-work {
     width: 100%;
@@ -287,7 +281,7 @@ h1 {
 
 .textform {
     padding: 10px 0 0 5rem;
-    line-height: 0.5rem;
+    line-height: 1.5rem;
 }
 
 .form {
@@ -311,7 +305,7 @@ h1 {
     height: 3rem;
     border-radius: 0.3rem;
     border: none;
-    margin: 0 0 0 1rem;
+    margin: 1rem 0;
     cursor: pointer;
 }
 
@@ -320,7 +314,7 @@ h1 {
 }
 
 .text-form {
-    font-size: 3rem;
+    font-size: 2.3rem;
 }
 
 .text-form-mini {
@@ -336,7 +330,7 @@ h1 {
     width: 100%;
     max-width: 1190px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0px;
     border: 2px solid black;
     border-radius: 1.5rem;
 }
@@ -354,6 +348,11 @@ h1 {
     padding: 10px;
 }
 
+.footerinformaiton p {
+    font-size: 1.2rem;
+
+}
+
 .footermenu a {
     text-decoration: none;
     color: black;
@@ -369,32 +368,140 @@ h1 {
     font-size: 10rem;
 }
 
+.mediafooter p{
+    margin: 0.2rem;
+}
+
 .mediafooter a {
     cursor: pointer;
 }
 
+.gallerywork {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
 .gallerywork h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 15px;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    justify-items: center;
 }
 
 .gallery img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 430px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    .logo {
+        display: none;
+    }
+
+    .mainbutton {
+        padding: 10px 20px;
+        font-size: 2rem;
+    }
+
+    .mainphoto {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .overlay {
+        padding: 50px 30px;
+        max-width: 100%;
+    }
+
+
+    .advantage_element h2 {
+        font-size: 2rem;
+    }
+
+    .advantage_subtitle {
+        font-size: 1.5rem;
+    }
+
+    .advantage_content {
+        font-size: 0.9rem;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .icon-advantage {
+        height: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .advantage_content p {
+        max-width: 100%; 
+    }
+
+    .content-container {
+        padding: 20px;
+    }
+
+    .work-photo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .description-work,
+    .description {
+        padding-left: 0;
+        margin-top: 10px;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+
+    .footerinformaiton p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .mediafooter p {
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+
+     .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .gallerywork h1 {
+        font-size: 2rem;
+    }
+}
+    
+    
