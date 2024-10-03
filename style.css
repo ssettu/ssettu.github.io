@@ -108,7 +108,7 @@ ul.menu .logo {
     height: 100vh; 
     display: flex;
     justify-content: right;
-   
+    background-attachment: fixed
 }
 
 
