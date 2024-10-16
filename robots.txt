@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /*.css$
+Sitemap: https://ssettu.github.io/sitemap.xml
